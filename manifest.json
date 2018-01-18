@@ -1,0 +1,21 @@
+{
+    "name": "test tool",
+    "version": "1.0",
+    "description": "测试工具",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "loader.js"
+        ],
+        "all_frames": true,
+        "run_at": "document_idle"
+    }]
+}
