@@ -14,7 +14,8 @@
     },
     "content_scripts": [{
         "matches": [
-            "http://*/*"
+            "http://*/*",
+            "https://*/*"
         ],
         "js": [
             "loader.js"
